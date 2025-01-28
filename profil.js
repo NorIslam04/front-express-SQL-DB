@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'login.html';
         return;
     }
-    axios.get('http://localhost:3001/profil', {
+    axios.get('https://express-sql-db.vercel.app/profil', {
         headers: {
             'Authorization': `Bearer ${token}`
         }
