@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const token = localStorage.getItem('token');
 
     if (!token) {
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
         return;
     }
     axios.get('https://express-sql-db.vercel.app/profil', {
@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .catch(error => {
         console.error('Erreur de récupération du profil:', error);
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     });
 
     document.getElementById('logoutButton').addEventListener('click', function() {
         localStorage.removeItem('token');
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     });
 });

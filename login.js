@@ -3,7 +3,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-    alert('Connexion en cours...');
 
     axios.post('https://express-sql-db.vercel.app/login', {
         email: email,
