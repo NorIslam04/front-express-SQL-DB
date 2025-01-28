@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(response => {
         const profileInfo = document.getElementById('profileInfo');
         profileInfo.innerHTML = `
-            <p><strong>Nom d'utilisateur:</strong> ${response.data.user.username}</p>
-            <p><strong>Email:</strong> ${response.data.user.email}</p>
+            <p><strong>Nom d'utilisateur:</strong> ${response.data.username}</p>
+            <p><strong>Email:</strong> ${response.data.email}</p>
         `;
     })
     .catch(error => {
